@@ -1,0 +1,64 @@
+.container{
+	width: 500px;
+	background: blue;
+	
+	display: grid;
+	grid-template-columns: 1fr;
+	
+
+	
+}
+
+.input-menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 10px;
+
+}
+
+#set-time{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.timer{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: 200px;
+	grid-column-gap: 30fr;
+	grid-template-areas: 
+		"a b"
+		"c c";
+	align-items: center;
+
+
+}
+
+.btnClass{
+	display: flex;
+	justify-content: space-between;
+	grid-area: c;
+	height: 50px;
+	
+	
+}
+.hours, .minut{
+	
+	margin: auto;
+	width: 60px;
+	height: 80px;
+	background: orange;
+	text-align: center;
+}
+
+.hours-wrapper{
+	grid-area: a;
+}
+
+.minut-wrapper{
+	grid-area: b;
+}
+
+button{
+	min-width: 150px;
+}

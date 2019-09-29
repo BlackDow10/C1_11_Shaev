@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="input-menu">
+			<label for="hours">Минут:<input type="text" class="form-control" id="hoursInput" value=""> </label>
+			<label for="minut">Секунд:<input type="text" class="form-control" id="minutInput" value=""> </label>
+			<button id="set-time" class="btn btn-success">Ввести время</button>
+		</div>
+		<div class="timer">
+			<div class="hours-wrapper">
+				<div class="hours">
+					<h2 id="hours">00</h2>
+					<p>Минут</p>
+				</div>
+			</div>
+			<div class="minut-wrapper">
+				<div class="minut">
+					<h2 id="minuts">00</h2>
+					<p>Секунд</p>
+				</div>
+			</div>
+			<div class="btnClass">
+				<button id="minut_plus" class="btn btn-primary">Плюс</button>
+				<button id="minut_minus" class="btn btn-primary">Минус</button>
+				<button id="start" class="btn btn-success">Отсчёт</button>
+			</div>
+		</div>
+	</div>
+	<script src="script2.js"></script>
+</body>
+</html>
